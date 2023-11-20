@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - Login</title>
+    <style>
+      ::selection{
+        background-color: black;
+        color: teal;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        .center {
+          background: linear-gradient(to top left, teal, black);
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .center h2{
+        font-size: 2rem;
+        font-family: cursive;
+        color: white;
+      }
+      /* Style the button */
+      .google-btn {
+        background-color: #ffffff;
+        color: grey;
+        padding: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: "Roboto";
+        box-shadow: 0px 0px 10px #9e9e9e;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .google-btn:hover {
+        background-color: #357ae8;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px #9e9e9e;
+        transform: scale(1.1);
+        color: white;
+      }
+
+      .google-btn img {
+        margin-right: 20px;
+      }
+      .google-btn span {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h2>myImageGallery</h2>
+        <a href="/auth/google" class="google-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" width="50px" height="50px">
+            <span>Login with Google</span>
+        </a>
+    </div>
+</body>
+</html>
